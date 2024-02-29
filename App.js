@@ -1,11 +1,14 @@
-import { StyleSheet, Text, View } from "react-native";
+import "react-native-gesture-handler";
 import { NavigationContainer } from "@react-navigation/native";
+import { StyleSheet, Text, View } from "react-native";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Estamos en la pokedex</Text>
-    </View>
+    <NavigationContainer>
+      <View style={styles.container}>
+        <Text>Estamos en la pokedex</Text>
+      </View>
+    </NavigationContainer>
   );
 }
 
